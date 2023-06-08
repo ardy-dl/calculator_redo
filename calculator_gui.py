@@ -53,7 +53,17 @@ class Calculator:
         else:
             print("Invalid operation")
 
-        self.show_result(result)
+        self.output_result(result)
+
+    def output_sum(self, sum):
+        print("Answer: " + str(sum))
+    
+    def output_diff(self, diff):
+        print("Answer: " + str(diff))
+
+    
+
+
 
     def output_result(self, result):
         messagebox.showinfo("Result", "The answer is: " + str(result))
