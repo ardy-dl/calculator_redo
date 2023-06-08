@@ -11,4 +11,13 @@ class Calculator:
     
     def output_sum(self, sum):
         print("Answer: " + str(sum))
+
+    def retry(self):
+        again = input("Do you want to try again? (yes/no)")
+        if again.lower() == "yes":
+            return True
+        elif again.lower() == "no":
+            return False
+        else: 
+            print("Please enter yes or no only.")
 #ask to try again

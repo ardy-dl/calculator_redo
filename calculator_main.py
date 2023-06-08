@@ -4,8 +4,12 @@ from functions import Operation
 calc = Calculator()
 solve = Operation()
 
-num_1 = calc.input_num1()
-num_2 = calc.input_num2()
+while True:
+    num_1 = calc.input_num1()
+    num_2 = calc.input_num2()
 
-sum = solve.addition(num_1, num_2)
-calc.output_sum(sum)
+    sum = solve.addition(num_1, num_2)
+    calc.output_sum(sum)
+
+    if not calc.retry():
+        break
