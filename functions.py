@@ -3,7 +3,7 @@
 class Operation:
     def addition(self, num_1, num_2):
         sum = num_1 + num_2
-        print(sum)
+        return sum
     
     def subtraction(self, num_1, num_2):
         diff = num_1 - num_2
