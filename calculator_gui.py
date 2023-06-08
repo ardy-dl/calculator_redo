@@ -1,4 +1,4 @@
-
+from tkinter import Label, Entry, StringVar, OptionMenu, Button
 #ask user for operation
 #ask user for input 1 and 2
 class Calculator:
@@ -6,7 +6,6 @@ class Calculator:
         self.root = root
         self.root.title = "Calculator"
         self.calc = calc
-
         self.create_widgets()
 
     def create_widgets(self):
@@ -22,6 +21,17 @@ class Calculator:
 
         self.num_2_entry = Entry(self.root)
         self.num_2_entry.pack()
+
+        self.operation_var = StringVar()
+        self.operation_var.set("+")
+
+        self.operation_options = ["+", "-", "*", "/"]
+        self.operation_dropdown = OptionMenu(self.root, self.operation_var, *self.operation_options)
+        self.operation_dropdown.pack()
+
+        self.calculate_button = Button(self.root, text="Calculate", command=self.calculate)
+        self.calculate_button.pack()
+
     def output_sum(self, sum):
         print("Answer: " + str(sum))
 
