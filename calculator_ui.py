@@ -1,5 +1,10 @@
 #ask user for operation
 #ask user for input 1 and 2
-num_1 = float(input("Enter a number: "))
-num_2 = float(input("Enter a number: "))
+class Calculator:
+    def input_num1(self):
+        num_1 = float(input("Enter a number: "))
+        return num_1
+    def input_num2(self):
+        num_2 = float(input("Enter a number: "))
+        return num_2
 #ask to try again
