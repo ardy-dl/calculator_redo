@@ -32,6 +32,26 @@ class Calculator:
         self.calculate_button = Button(self.root, text="Calculate", command=self.calculate)
         self.calculate_button.pack()
 
+    def calculate(self):
+        num_1 = float(self.num_1_entry.get())
+        num_2 = float(self.num_2_entry.get())
+        operation = self.operation_var.get()
+
+        if operation == "+":
+            result = self.calc.addition(num_1, num_2)
+            self.output_sum(result)
+        elif operation == "-":
+            result = self.calc.subtraction(num_1, num_2)
+            self.output_diff(result)
+        elif operation == "*":
+            result = self.calc.multiplication(num_1, num_2)
+            self.output_product(result)
+        elif operation == "/":
+            result = self.calc.division(num_1, num_2)
+            self.output_quotient(result)
+        else:
+            print("Invalid operation")
+
     def output_sum(self, sum):
         print("Answer: " + str(sum))
 
