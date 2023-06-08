@@ -1,34 +1,31 @@
 # create operations class
-#create operations
+
 class Operation:
+    #create operations
     def addition(self, num_1, num_2):
-        sum = num_1 + num_2
-        return sum
+        result = num_1 + num_2
+        return result
     
     def subtraction(self, num_1, num_2):
-        diff = num_1 - num_2
-        return diff
+        result = num_1 - num_2
+        return result
     
     def multiplication(self, num_1, num_2):
-        product = num_1 * num_2
-        return product
+        result = num_1 * num_2
+        return result
     
     def division(self, num_1, num_2):
         if num_2 == 0:
             print("Error: Cannot divide by zero.")
         else:
-            quotient = num_1 / num_2
-            return quotient
+            result = num_1 / num_2
+            return result
         
 
     
 
         
-# initialization
-# add
-# subtract
-# multiply
-# divide
+
 
     
 

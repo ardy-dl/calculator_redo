@@ -7,6 +7,8 @@ from functions import Operation
 # rooting
 def main():
     root = Tk()
+    root.title("Calculator")
+    root.geometry("300x160")
     calc = Operation()
     gui = Calculator(root, calc)
     root.mainloop()

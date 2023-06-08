@@ -61,9 +61,11 @@ class Calculator:
     def output_diff(self, diff):
         print("Answer: " + str(diff))
 
-    
+    def output_product(self, product):
+        print("Answer: " + str(product))
 
-
+    def output_quotient(self, quotient):
+        print("Answer: " + str(quotient))
 
     def output_result(self, result):
         messagebox.showinfo("Result", "The answer is: " + str(result))
