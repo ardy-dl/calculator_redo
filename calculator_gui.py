@@ -1,4 +1,5 @@
 from tkinter import Label, Entry, StringVar, OptionMenu, Button
+from tkinter import messagebox
 #ask user for operation
 #ask user for input 1 and 2
 class Calculator:
@@ -52,24 +53,7 @@ class Calculator:
         else:
             print("Invalid operation")
 
-    def output_sum(self, sum):
-        print("Answer: " + str(sum))
+        self.show_result(result)
 
-    def output_diff(self, diff):
-        print("Answer: " + str(diff))
-
-    def output_product(self, product):
-        print("Answer: " + str(product))
-
-    def output_quotient(self, quotient):
-        print("Answer: " + str(quotient))   
-
-    def retry(self):
-        again = input("Do you want to try again? (yes/no)")
-        if again.lower() == "yes":
-            return True
-        elif again.lower() == "no":
-            return False
-        else: 
-            print("Please enter yes or no only.")
-#ask to try again
+    def output_result(self, result):
+        messagebox.showinfo("Result", "The answer is: " + str(result))
