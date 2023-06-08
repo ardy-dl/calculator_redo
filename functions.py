@@ -3,13 +3,13 @@
 class Operation:
     def addition(self, num_1, num_2):
         sum = num_1 + num_2
-        return sum
+        print(sum)
     
     def subtraction(self, num_1, num_2):
         diff = num_1 - num_2
         return diff
     
-    def product(self, num_1, num_2):
+    def multiplication(self, num_1, num_2):
         product = num_1 * num_2
         return product
     
