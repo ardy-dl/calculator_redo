@@ -1,14 +1,27 @@
+
 #ask user for operation
 #ask user for input 1 and 2
 class Calculator:
-    def input_num1(self):
-        num_1 = float(input("Enter a number: "))
-        return num_1
-    
-    def input_num2(self):
-        num_2 = float(input("Enter a number: "))
-        return num_2
-    
+    def __init__(self, root, calc):
+        self.root = root
+        self.root.title = "Calculator"
+        self.calc = calc
+
+        self.create_widgets()
+
+    def create_widgets(self):
+        #input fields title
+        num_1_label = Label(self.root, text = "Enter the first number: ")
+        num_1_label.pack()
+
+        self.num_1_entry = Entry(self.root)
+        self.num_1_entry.pack()
+
+        num_2_label = Label(self.root, text = "Enter the second number: ")
+        num_2_label.pack()
+
+        self.num_2_entry = Entry(self.root)
+        self.num_2_entry.pack()
     def output_sum(self, sum):
         print("Answer: " + str(sum))
 

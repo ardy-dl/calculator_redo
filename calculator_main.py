@@ -1,4 +1,4 @@
-from calculator_ui import Calculator
+from calculator_gui import Calculator
 from functions import Operation
 
 calc = Calculator()
