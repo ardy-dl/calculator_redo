@@ -10,6 +10,8 @@ while True:
 
     sum = solve.addition(num_1, num_2)
     calc.output_sum(sum)
+    quotient = solve.division(num_1, num_2)
+    calc.output_quotient(quotient)
 
     if not calc.retry():
         break

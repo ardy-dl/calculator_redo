@@ -12,6 +12,15 @@ class Calculator:
     def output_sum(self, sum):
         print("Answer: " + str(sum))
 
+    def output_diff(self, diff):
+        print("Answer: " + str(diff))
+
+    def output_product(self, product):
+        print("Answer: " + str(product))
+
+    def output_quotient(self, quotient):
+        print("Answer: " + str(quotient))   
+
     def retry(self):
         again = input("Do you want to try again? (yes/no)")
         if again.lower() == "yes":
